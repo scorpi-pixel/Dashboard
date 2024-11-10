@@ -4,15 +4,113 @@
     box-sizing: border-box;
 }
 body {
-
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    background-color: #00092a;
+    color: white;
 }
 header {
     text-align: center;
+    color: #84fdff;
+    text-transform: uppercase;
+    text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;;
+}
+.logo {
+    font-size: 3rem;
+    color: #61b5b7;
+    font-weight: 800;
+    transition: 0.5s ease;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+a {
+    text-decoration: none;
 }
 .grid-container {
+    height: 100vh;
+}
+.main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+.card {
+    margin-left: 30%;
+    margin-right: auto;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 5px;
+    color: #84fdff;
+    text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
+}
+.card h1 {
+    color: #84fdff;
+    text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
+}
+.card span {
+    font-size: 3rem;
+    color: white;
+}
+.card:first-child {
+    background-color: #445a5aa0;
+}
+  
+.card:nth-child(2) {
+    background-color: #445a5aa0;
+}
+  
+.card:nth-child(3) {
+    background-color: #445a5aa0;
+}
+.card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.charts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
+    margin-top: 60px;
+}
+.charts-card {
+    background-color: #263043;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+.chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #84fdff;
+    text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;;
 }

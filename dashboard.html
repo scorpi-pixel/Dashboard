@@ -3,31 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/secondary.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- FontAwesome for social icons -->
+    <script src="https://kit.fontawesome.com/1bcdd94c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--Google Charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
 </head>
 <body>
     <!--Dashboard-->
     <header id="dashboard">
-        <h1>Dashboard</h1>
+        <h1>Dashboard</h1><a href="index.html"><h1 class="logo"><img src="css/Images/Mili_logo.png" alt="">Home</h1></a>
     </header>
+
+    <!-- MAIN -->
+
+    <!-- CARDS -->
     <div class="grid-container">
-        <section id="cards">
-            This is cards
-        </section>
-        <section id="charts">
-            <canvas id="pageViewsChart" width="400" height="200"></canvas>
-        </section>
+        <div class="main-card">
+            <div class="card">
+                <div class="card-inner">
+                    <h2>Number of Active Users</h2>
+                    <span class="material-icons-outlined">groups</span>
+                </div>
+                <h1><br>3,012</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h2>Most Watched Music Video</h2>
+                    <span class="icon"><i class="fa-brands fa-youtube"></i></span>
+                </div>
+                <h1>In Hell We Live, Lament</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h2>Most Popular Album</h2>
+                    <span class="material-icons-outlined">library_music</span>
+                </div>
+                <h1>Miracle Milk</h1>
+            </div>
+        </div>
+
+        <!--Charts-->
+        <div class="charts">
+            <div class="charts-card">
+                <h2 class="chart-title">Top 5 Most Popular Songs</h2>
+                <div id="Piechart"></div>
+            </div>
+
+            <div class="charts-card">
+                <h2 class="chart-title">Music Video Watch time</h2>
+                <div id="Barchart"></div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="charts-card">
+                <h2 class="chart-title">Popular Browsers</h2>
+                <div id="Piechart2"></div>
+            </div>
+
+            <div class="charts-card">
+                <h2 class="chart-title">Page Load Time</h2>
+                <div id="Linechart"></div>
+            </div>
+        </div>
+
+
+
+
         <section id="tables">
-            This is tables
+            
         </section>
     </div>
 
-
-
 <!--Javascript-->
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
